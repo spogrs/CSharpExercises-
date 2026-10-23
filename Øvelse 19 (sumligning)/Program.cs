@@ -6,15 +6,26 @@ namespace Øvelse_19
     {
         static void Main(string[] args)
         {
-            string result = SumLigning(new List<int> { 1, 5, 7 });
+            string result = SumLigning(new List<int> {
+            });
             Console.WriteLine(result);
             Console.ReadKey();
         }
 
         static public string SumLigning(List<int> input)
         {
-            string output = string.Join(" + ", input);
+            string output;
+            if (input.Count == 0)
+            {
+            output = "0";
+            }
+            else
+            { 
+                output = string.Join(" + ", input);
+            }
+
             output += " = " + input.Sum();
+
             return output;
         }
     }

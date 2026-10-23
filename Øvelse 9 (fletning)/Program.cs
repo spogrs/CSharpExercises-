@@ -1,10 +1,10 @@
-﻿namespace Øvelse_10
+﻿namespace Øvelse_9
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello, World!");
+   
         }
     }
 }
