@@ -50,7 +50,11 @@ Udskriv ét par pr. linje.
 
 ### Øvelse 6 (tredobbelt og kvadrat)
 
-Skriv to metoder: `Tredobl` og `Kvadrat`. Metoden `Tredobl` ganger sin parameter med tre. Metoden `Kvadrat` opløfter sin parameter i anden potens. For eksempel gælder `Tredobl(5) == 15` og `Kvadrat(5) == 25`.
+Skriv to metoder: `Tredobl` og `Kvadrat`. 
+Metoden `Tredobl` ganger sin parameter med tre. 
+Metoden `Kvadrat` opløfter sin parameter i anden potens. 
+Det vil sige at, hvis paramtren f.eks. hedder $x$, så returneres $x^2$,  som jo er det samme som $x*x$.  
+For eksempel gælder `Tredobl(5) == 15` og `Kvadrat(5) == 25`.
 
 **Del 1**
 
@@ -134,22 +138,23 @@ Bemærk, at det andet tal i et par ikke hører med til intervallet – ligesom i
 
 ### Øvelse 13 (vend ordbog)
 
-Lad `d` være en ordbog af typen `Dictionary<string, List<string>>`, der har engelske ord som nøgler og en liste af danske ord som værdier. Ordbogen kan bruges til at finde de danske ord for et engelsk ord:
+Lad `d` være et _Dictionary_ af typen `Dictionary<string, List<string>>`, der har engelske ord som nøgler og en liste af finske ord som værdier. Ordbogen kan bruges til at finde de finske ord for et engelsk ord:
 
 ```csharp
-d["move"]   // ["flytte"]
-d["hide"]   // ["gemme", "skjule"]
+d["move"]   // ["liikuttaa"]
+d["hide"]   // ["piilottaa", "salata"]
 ```
 
-Lav en metode `VendOrdbog`, der ud fra en engelsk-dansk ordbog givet som parameter laver en dansk-engelsk ordbog. Værdierne i den nye ordbog skal være lister af ord. Det skal virke sådan her:
+Lav en metode `VendOrdbog`, der ud fra en engelsk-finsk ordbog givet som parameter laver en finsk-engelsk ordbog. Værdierne i den nye ordbog skal være lister af ord. 
+Det skal virke sådan her:
 
 ```csharp
 var d = new Dictionary<string, List<string>>
 {
-    ["move"] = new List<string> { "flytte" },
-    ["hide"] = new List<string> { "gemme", "skjule" },
-    ["guy"] = new List<string> { "fyr" },
-    ["lighthouse"] = new List<string> { "fyr" }
+    ["move"] = new List<string> { "liikuttaa" },
+    ["hide"] = new List<string> { "piilottaa', 'salata" },
+    ["six"] = new List<string> { "kuusi" },
+    ["fir"] = new List<string> { "kuusi" }
 };
 
 var omvendt = VendOrdbog(d);
@@ -162,14 +167,13 @@ foreach (var par in omvendt)
 Output:
 
 ```
-flytte: move
-gemme: hide
-skjule: hide
-fyr: guy, lighthouse
+liikuttaa: move
+piilottaa: hide
+salata: hide
+kuusi: six, fir
 ```
 
 Pas på med synonymer og homonymer!
-
 ## Strenghåndtering
 
 ### Øvelse 18 (akronymer)
