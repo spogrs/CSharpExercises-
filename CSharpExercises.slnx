@@ -3,5 +3,8 @@
     <File Path="README.md" />
     <File Path="Øvelser.md" />
   </Folder>
-  <Project Path="Multiplikationstabel/Multiplikationstabel.csproj" />
+  <Project Path="Multiplikationstabel/Øvelse 10 (find intervaller).csproj" />
+  <Project Path="Øvelse 13 (vend ordbog)/Øvelse 13 (vend ordbog).csproj" Id="934e83a0-8fdd-4966-bac1-2f53e8c38e64" />
+  <Project Path="Øvelse 18 (akronymer)/Øvelse 18 (akronymer).csproj" Id="72a465e6-4108-490e-ae5a-51501029ea9e" />
+  <Project Path="Øvelse 19 (sumligning)/Øvelse 19 (sumligning).csproj" Id="c8d0ef38-f9c2-4f4b-bfed-e9fb4b7c1f57" />
 </Solution>

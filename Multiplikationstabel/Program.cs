@@ -1,4 +1,4 @@
-﻿namespace Multiplikationstabel
+﻿namespace Øvelse_10
 {
     internal class Program
     {
